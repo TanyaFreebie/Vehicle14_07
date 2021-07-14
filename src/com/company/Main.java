@@ -25,11 +25,14 @@ public class Main {
 
         System.out.println("Number of seats: ");
         car.setSeats(id.nextInt());
+        System.out.println("Car length is (m): ");
+        car.setLength(id.nextInt());
 
         System.out.println("you are in " + car.getBrand());
         System.out.println("car is " + car.getColor());
         System.out.println("there is " + car.getSeats() + " seats");
         System.out.println("and there is " + car.getTires() + " tires");
+        System.out.println("Your car length is " + car.getLength() + " m");
 
         System.out.println("did you start an engine?(true/false)");
         car.startEngine(id.nextBoolean());

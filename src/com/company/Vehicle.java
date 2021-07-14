@@ -6,11 +6,13 @@ public class Vehicle {
     Scanner sc = new Scanner(System.in);
     private  String brand;
     private  String color;
+    private float length;
     private  int tires;
     private int seats;
     private int increase;
     private int decrease;
     private int currentSpeed;
+
 
 
 
@@ -45,6 +47,7 @@ public class Vehicle {
     }
 
     public void stopEngine(){
+
         System.out.println("Engine switched off!");
     }
 
@@ -61,6 +64,14 @@ public class Vehicle {
         this.color = color;
     }
 
+    public float getLength() {
+        return this.length;
+    }
+
+    public void setLength(float length) {
+        this.length = length;
+    }
+
     public int getTires() {
         return this.tires;
     }
@@ -73,18 +84,6 @@ public class Vehicle {
     public void setSeats(int seats){
         this.seats = seats;
     }
-//    public int getIncrease() {
-//        return this.increase;
-//    }
-//    public void setIncrease(int increase){
-//        this.tires = increase;
-//    }
-//    public int getDecrease() {
-//        return this.decrease;
-//    }
-//    public void setDecrease(int decrease){
-//        this.decrease = decrease;
-//    }
 
 
 }
